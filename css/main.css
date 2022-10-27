@@ -1,0 +1,31 @@
+* {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+}
+
+header {
+  background-color: #fff;
+}
+
+footer {
+  background-color: #353535;
+  color: #FFFFFF;
+}
+
+h1 {
+  width: 100px;
+  background-color: #9356DC;
+  margin: 1.25em;
+  padding: 1rem;
+  border-radius: 100rem;
+  transition: background-color 1000ms, transform 1000ms, border-radius 500ms;
+}
+h1:hover {
+  transform: scale(0.75) rotate(-360deg);
+  border-radius: 0;
+  background-color: #99E2D0;
+}

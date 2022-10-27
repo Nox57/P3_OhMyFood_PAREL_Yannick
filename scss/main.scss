@@ -1,0 +1,34 @@
+@import "./utils/variables";
+@import "./base/base";
+
+body {
+    min-width: 320px;
+}
+
+  ////////////
+ //  Main  //
+////////////
+
+header {
+    background-color: $bg-header;
+}
+
+footer {
+    background-color: $color-footer;
+    color: #FFFFFF;
+}
+
+
+h1 {
+    width: 100px ;
+    background-color: $color-primary;
+    margin: 1.25em;
+    padding: 1rem;
+    border-radius: 100rem;
+    transition: background-color 1000ms, transform 1000ms, border-radius 500ms;
+    &:hover {
+        transform: scale(0.75) rotate(-360deg);
+        border-radius: 0;
+        background-color: $color-tertiary;
+    }
+}
