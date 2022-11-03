@@ -1,34 +1,9 @@
-@import "./utils/variables";
-@import "./base/base";
+@charset 'utf-8';
 
-body {
-    min-width: 320px;
-}
+@import "utils/variables";
+@import "utils/mixins";
 
-  ////////////
- //  Main  //
-////////////
+@import "base/base";
 
-header {
-    background-color: $bg-header;
-}
-
-footer {
-    background-color: $color-footer;
-    color: #FFFFFF;
-}
-
-
-h1 {
-    width: 100px ;
-    background-color: $color-primary;
-    margin: 1.25em;
-    padding: 1rem;
-    border-radius: 100rem;
-    transition: background-color 1000ms, transform 1000ms, border-radius 500ms;
-    &:hover {
-        transform: scale(0.75) rotate(-360deg);
-        border-radius: 0;
-        background-color: $color-tertiary;
-    }
-}
+@import "layout/footer";
+@import "layout/header";

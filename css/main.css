@@ -1,31 +1,35 @@
 * {
-  font-family: "Roboto", sans-serif;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
-body {
-  min-width: 320px;
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
 }
 
-header {
-  background-color: #fff;
+p {
+  margin: 0;
 }
 
 footer {
   background-color: #353535;
-  color: #FFFFFF;
+  color: #ffffff;
+  padding: 20px;
+}
+footer h3 {
+  font-family: "Shrikhand", sans-serif;
+  font-weight: normal;
+}
+footer nav a {
+  color: #ffffff;
+}
+footer nav a p {
+  padding: 5px 0px;
+}
+footer nav a p i {
+  padding-right: 10px;
 }
 
-h1 {
-  width: 100px;
-  background-color: #9356DC;
-  margin: 1.25em;
-  padding: 1rem;
-  border-radius: 100rem;
-  transition: background-color 1000ms, transform 1000ms, border-radius 500ms;
-}
-h1:hover {
-  transform: scale(0.75) rotate(-360deg);
-  border-radius: 0;
-  background-color: #99E2D0;
+header {
+  background-color: #ffffff;
 }

@@ -1,4 +1,7 @@
 * {
-    font-family: $main-font;
     box-sizing: border-box;
+    font-family: $main-font;
 }
+
+a:link, a:visited, a:hover, a:active { text-decoration: none; }
+p { margin: 0; }
