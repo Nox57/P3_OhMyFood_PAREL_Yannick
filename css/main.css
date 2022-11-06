@@ -1,14 +1,18 @@
-* {
-  box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
-}
-
 a:link, a:visited, a:hover, a:active {
   text-decoration: none;
 }
 
 p {
   margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  min-width: 320px;
 }
 
 footer {
@@ -31,5 +35,18 @@ footer nav a p i {
 }
 
 header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #ffffff;
+}
+header img {
+  height: 30px;
+  margin: 30px auto 20px auto;
+}
+header i {
+  position: absolute;
+  font-size: 22px;
+  left: 30px;
+  top: 35px;
 }

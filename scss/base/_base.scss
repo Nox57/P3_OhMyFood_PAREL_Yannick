@@ -1,7 +1,12 @@
+// reset css
+a:link, a:visited, a:hover, a:active { text-decoration: none; }
+p { margin: 0; }
+
 * {
     box-sizing: border-box;
     font-family: $main-font;
 }
 
-a:link, a:visited, a:hover, a:active { text-decoration: none; }
-p { margin: 0; }
+body {
+    min-width: 320px;
+}

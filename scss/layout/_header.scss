@@ -1,3 +1,14 @@
 header {
+    @include flex_centered;
     background-color: $bg-header;
+    img {
+        height: 30px;
+        margin: 30px auto 20px auto;
+    }
+    i {
+        position: absolute;
+        font-size: 22px;
+        left: 30px;
+        top: 35px;
+    }
 }
