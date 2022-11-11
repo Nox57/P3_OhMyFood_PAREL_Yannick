@@ -2,7 +2,7 @@
     display: block;
     width: 100%;
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 
     &__input {
         background-color: $input_color;
@@ -24,17 +24,21 @@
     }
 
     &__button {
-        color: white;
         font-weight: bold;
         padding: 15px;
-        background: linear-gradient(to bottom, $color-secondary, $color-primary);
+        margin: 30px;
         border: 0px;
         border-radius: 30px;
         box-shadow: 5px 4px 8px rgb(0 0 0 / 30%);
 
-        &:hover {
-            background: linear-gradient(to bottom, $color-primary, $color-secondary);
-            cursor: pointer;
+        &--gradient {
+            background: linear-gradient(to bottom, $color-secondary, $color-primary);  
+            color: white;
+            
+            &:hover {
+                background: linear-gradient(to bottom, $color-primary, $color-secondary);
+                cursor: pointer;
+            }
         }
 
     }
