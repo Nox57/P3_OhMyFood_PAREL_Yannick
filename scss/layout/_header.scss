@@ -3,10 +3,16 @@ header {
     @include flex_centered;
     background-color: $bg-header;
     box-shadow: 0px 2px 3px rgb(0 0 0 / 20%);
+
+    a {
+        color: black;
+    }
+
     img {
         height: 30px;
         margin: 30px auto 20px auto;
     }
+
     i {
         position: absolute;
         font-size: 22px;

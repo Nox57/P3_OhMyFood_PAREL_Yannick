@@ -130,6 +130,85 @@ body {
   font-size: 28px;
 }
 
+.header_menu {
+  margin: 0 auto;
+  max-width: 500px;
+}
+.header_menu img {
+  width: 100%;
+  z-index: 1;
+}
+.header_menu h2 {
+  position: relative;
+  font-family: "Shrikhand", sans-serif;
+  background-color: #fff;
+  margin-top: -40px;
+  padding: 30px;
+  border-radius: 40px;
+  z-index: 2;
+}
+.header_menu h2 i {
+  position: absolute;
+  right: 40px;
+}
+
+.meal_menu {
+  margin: 0 auto;
+  max-width: 500px;
+  padding-bottom: 20px;
+}
+.meal_menu > h3 {
+  margin: 25px;
+  text-transform: uppercase;
+}
+.meal_menu article {
+  display: flex;
+  box-shadow: 3px 5px 10px 1px #999;
+  margin: 20px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.meal_menu article div {
+  padding: 10px;
+}
+.meal_menu article div:first-child {
+  width: 100%;
+}
+.meal_menu article div:last-child {
+  align-items: center;
+  width: 0%;
+  display: none;
+  background-color: #99E2D0;
+}
+.meal_menu article div:last-child p {
+  font-size: 28px;
+  color: white;
+}
+.meal_menu article h3 {
+  margin-top: 10px;
+}
+.meal_menu article p {
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.meal_menu article .meal_menu_price {
+  position: absolute;
+  font-weight: bold;
+  text-align: right;
+  right: 20px;
+}
+.meal_menu article:hover div:first-child {
+  width: 80%;
+}
+.meal_menu article:hover div:last-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  overflow: hidden;
+}
+
 footer {
   background-color: #353535;
   color: #ffffff;
@@ -138,6 +217,8 @@ footer {
 footer h3 {
   font-family: "Shrikhand", sans-serif;
   font-weight: normal;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 footer nav a {
   color: #ffffff;
@@ -156,6 +237,9 @@ header {
   align-items: center;
   background-color: #ffffff;
   box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
+}
+header a {
+  color: black;
 }
 header img {
   height: 30px;
