@@ -84,7 +84,7 @@ body {
   min-width: 400px;
 }
 .working p:hover {
-  background-color: #ffdff6;
+  background-color: #f5edff;
 }
 .working p:hover i {
   color: #9356DC;
@@ -163,50 +163,65 @@ body {
 }
 .meal_menu article {
   display: flex;
-  box-shadow: 3px 5px 10px 1px #999;
+  box-shadow: 3px 5px 10px 1px rgb(207, 207, 207);
   margin: 20px;
   border-radius: 20px;
   overflow: hidden;
 }
-.meal_menu article div {
-  padding: 10px;
-}
-.meal_menu article div:first-child {
+.meal_menu article .meal_ingredients {
   width: 100%;
+  padding: 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
-.meal_menu article div:last-child {
+.meal_menu article .meal_checked {
+  display: flex;
   align-items: center;
-  width: 0%;
-  display: none;
+  justify-content: center;
+  margin-right: -100px;
+  width: 100px;
   background-color: #99E2D0;
 }
-.meal_menu article div:last-child p {
+.meal_menu article .meal_checked p {
   font-size: 28px;
   color: white;
 }
 .meal_menu article h3 {
   margin-top: 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .meal_menu article p {
-  position: relative;
   margin-top: 10px;
   margin-bottom: 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.meal_menu article p div {
+  height: 100%;
 }
 .meal_menu article .meal_menu_price {
-  position: absolute;
+  position: relative;
+  width: 30px;
+  vertical-align: bottom;
   font-weight: bold;
-  text-align: right;
-  right: 20px;
+  white-space: nowrap;
+  margin-right: 20px;
 }
-.meal_menu article:hover div:first-child {
-  width: 80%;
+.meal_menu article .meal_menu_price span {
+  position: absolute;
+  bottom: 20px;
 }
-.meal_menu article:hover div:last-child {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 20%;
-  overflow: hidden;
+.meal_menu article:hover .meal_checked {
+  margin-right: 0px;
+  transition: margin-right 0.5s;
+}
+.meal_menu article:hover .meal_checked i {
+  transform: rotate(360deg);
+  transition: transform 0.7s;
 }
 
 footer {
@@ -227,7 +242,7 @@ footer nav a p {
   padding: 5px 0px;
 }
 footer nav a p i {
-  padding-right: 10px;
+  width: 30px;
 }
 
 header {

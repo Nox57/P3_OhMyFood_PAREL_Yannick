@@ -27,6 +27,7 @@
     margin: 0 auto;
     max-width: 500px;
     padding-bottom: 20px;
+
     >h3 {
         margin: 25px;
         text-transform: uppercase;
@@ -34,57 +35,71 @@
 
     article {
         display: flex;
-        box-shadow: 3px 5px 10px 1px #999;
+        box-shadow: 3px 5px 10px 1px rgb(207, 207, 207);
         margin: 20px;
         border-radius: 20px;
         overflow: hidden;
 
-        div {
-            padding: 10px;
-        }
-        div:first-child {
+        .meal_ingredients {
             width: 100%;
+            padding: 10px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
         }
 
-        div:last-child {
+        .meal_checked {
+            display: flex;
             align-items: center;
-            width: 0%;
-            display: none;
+            justify-content: center;
+            margin-right: -100px;
+            width: 100px;
             background-color: $color-tertiary;
             p {
                 font-size: 28px;
                 color: white;
             }
-
         }
 
         h3 {
             margin-top: 10px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
         }
 
         p {
-            position: relative;
             margin-top: 10px;
             margin-bottom: 10px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            div {
+                height: 100%;
+            }
         }
 
         .meal_menu_price {
-            position: absolute;
+            position: relative;
+            width: 30px;
+            vertical-align: bottom;
             font-weight: bold;
-            text-align: right;
-            right: 20px;
+            white-space: nowrap;
+            margin-right: 20px;
+            span {
+                position: absolute;
+                bottom: 20px;
+            }
         }
 
         &:hover {
-            div:first-child {
-                width: 80%;
-            }
-            div:last-child {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 20%;
-                overflow: hidden;
+            .meal_checked {
+                margin-right: 0px;
+                transition: margin-right 0.5s;
+                i {
+                    transform: rotate(360deg);
+                    transition: transform 0.7s;
+                }
             }
         }
     }
