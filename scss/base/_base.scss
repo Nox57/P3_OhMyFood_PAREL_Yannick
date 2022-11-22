@@ -21,7 +21,7 @@ body {
     position: fixed;
     background-color: rgba(0, 0, 0, 0.25);
     z-index: 1;
-    animation: hide-loader-container 0s ease-in 3s;
+    animation: hide-loader-container 0s ease-in 1.5s;
     animation-fill-mode: forwards;
 }
 
@@ -31,5 +31,5 @@ body {
     border: 14px solid;
     border-color: $color-primary transparent $color-secondary transparent;
     border-radius: 50%;
-    animation: rotate-animation 3s linear;
+    animation: rotate-animation 1.5s linear;
 }

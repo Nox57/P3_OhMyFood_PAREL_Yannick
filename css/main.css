@@ -78,8 +78,8 @@ body {
   position: fixed;
   background-color: rgba(0, 0, 0, 0.25);
   z-index: 1;
-  -webkit-animation: hide-loader-container 0s ease-in 3s;
-          animation: hide-loader-container 0s ease-in 3s;
+  -webkit-animation: hide-loader-container 0s ease-in 1.5s;
+          animation: hide-loader-container 0s ease-in 1.5s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -90,8 +90,8 @@ body {
   border: 14px solid;
   border-color: #9356DC transparent #FF79DA transparent;
   border-radius: 50%;
-  -webkit-animation: rotate-animation 3s linear;
-          animation: rotate-animation 3s linear;
+  -webkit-animation: rotate-animation 1.5s linear;
+          animation: rotate-animation 1.5s linear;
 }
 
 .form {
