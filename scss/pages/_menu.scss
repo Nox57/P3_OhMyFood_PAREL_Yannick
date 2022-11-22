@@ -53,6 +53,15 @@
         margin: 20px;
         border-radius: 20px;
         overflow: hidden;
+        opacity: 0;
+        animation: 0.7s fade-animation ease forwards;
+
+        // boucle de 2 à 5 car h3 = nth1
+        @for $i from 2 through 5 {
+            &:nth-child(#{$i}) {
+                animation-delay: 0.2s * $i;
+            }
+        }
 
         .meal_ingredients {
             width: 100%;

@@ -1,3 +1,57 @@
+@-webkit-keyframes rotate-animation {
+  0% {
+    transform: rotate(0deg);
+    scale: 0.5;
+  }
+  100% {
+    transform: rotate(1040deg);
+    scale: 1;
+  }
+}
+@keyframes rotate-animation {
+  0% {
+    transform: rotate(0deg);
+    scale: 0.5;
+  }
+  100% {
+    transform: rotate(1040deg);
+    scale: 1;
+  }
+}
+@-webkit-keyframes hide-loader-container {
+  to {
+    visibility: hidden;
+    width: 0%;
+    height: 0%;
+  }
+}
+@keyframes hide-loader-container {
+  to {
+    visibility: hidden;
+    width: 0%;
+    height: 0%;
+  }
+}
+@-webkit-keyframes fade-animation {
+  0% {
+    opacity: 0;
+    transform: translateY(20%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fade-animation {
+  0% {
+    opacity: 0;
+    transform: translateY(20%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 a:link, a:visited, a:hover, a:active {
   text-decoration: none;
 }
@@ -40,41 +94,6 @@ body {
           animation: rotate-animation 3s linear;
 }
 
-@-webkit-keyframes rotate-animation {
-  0% {
-    transform: rotate(0deg);
-    scale: 0.5;
-  }
-  100% {
-    transform: rotate(1040deg);
-    scale: 1;
-  }
-}
-
-@keyframes rotate-animation {
-  0% {
-    transform: rotate(0deg);
-    scale: 0.5;
-  }
-  100% {
-    transform: rotate(1040deg);
-    scale: 1;
-  }
-}
-@-webkit-keyframes hide-loader-container {
-  to {
-    visibility: hidden;
-    width: 0%;
-    height: 0%;
-  }
-}
-@keyframes hide-loader-container {
-  to {
-    visibility: hidden;
-    width: 0%;
-    height: 0%;
-  }
-}
 .form {
   display: block;
   width: 100%;
@@ -311,6 +330,25 @@ header i {
   margin: 20px;
   border-radius: 20px;
   overflow: hidden;
+  opacity: 0;
+  -webkit-animation: 0.7s fade-animation ease forwards;
+          animation: 0.7s fade-animation ease forwards;
+}
+.meal_menu article:nth-child(2) {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+.meal_menu article:nth-child(3) {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+.meal_menu article:nth-child(4) {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+.meal_menu article:nth-child(5) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 .meal_menu article .meal_ingredients {
   width: 100%;
