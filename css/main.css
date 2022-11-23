@@ -408,3 +408,7 @@ header i {
   transform: rotate(360deg);
   transition: transform 0.7s ease-in-out;
 }
+
+.order_menu {
+  text-align: center;
+}
