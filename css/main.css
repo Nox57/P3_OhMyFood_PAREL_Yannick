@@ -306,6 +306,14 @@ header i {
   position: absolute;
   right: 40px;
 }
+.header_menu h2 i:hover {
+  background: linear-gradient(#9356DC, #FF79DA);
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
 
 .meal_menu {
   margin: 0 auto;

@@ -21,6 +21,15 @@
         i {
             position: absolute;
             right: 40px;
+
+            &:hover {
+                background: linear-gradient($color-primary, $color-secondary);
+                color: transparent;
+                -webkit-text-fill-color: transparent;
+                font-weight: 900;
+                background-clip: text;
+                -webkit-background-clip: text;
+            }
         }
     }
 }
