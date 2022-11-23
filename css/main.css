@@ -133,9 +133,11 @@ body {
 .form__button--gradient {
   background: linear-gradient(to bottom, #FF79DA, #9356DC);
   color: white;
+  transition: 0.5s ease-in-out;
 }
 .form__button--gradient:hover {
-  background: linear-gradient(to bottom, #9356DC, #FF79DA);
+  filter: brightness(110%);
+  box-shadow: 5px 6px 14px rgba(0, 0, 0, 0.6);
   cursor: pointer;
 }
 
