@@ -151,6 +151,11 @@ footer h3 {
   margin-top: 10px;
   margin-bottom: 20px;
 }
+@media screen and (min-width: 768px) {
+  footer h3 {
+    text-align: center;
+  }
+}
 footer nav a {
   color: #ffffff;
 }
@@ -159,6 +164,12 @@ footer nav a p {
 }
 footer nav a p i {
   width: 30px;
+}
+@media screen and (min-width: 768px) {
+  footer nav {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
 header {
