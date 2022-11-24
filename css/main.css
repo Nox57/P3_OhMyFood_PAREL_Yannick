@@ -222,6 +222,12 @@ header i {
 .working p:hover i {
   color: #9356DC;
 }
+@media screen and (min-width: 768px) {
+  .working {
+    margin: 40px;
+    padding: 0px;
+  }
+}
 
 .restaurants {
   margin: 20px;
@@ -285,8 +291,11 @@ header i {
   -webkit-background-clip: text;
 }
 @media screen and (min-width: 768px) {
+  .restaurants {
+    margin: 40px;
+  }
   .restaurants div a {
-    width: 40%;
+    width: 48%;
   }
 }
 
@@ -320,6 +329,11 @@ header i {
   font-weight: 900;
   background-clip: text;
   -webkit-background-clip: text;
+}
+@media screen and (min-width: 768px) {
+  .header_menu h2 {
+    padding: 40px;
+  }
 }
 
 .meal_menu {
@@ -422,6 +436,11 @@ header i {
 .meal_menu article:hover .meal_checked i, .meal_menu article:active .meal_checked i {
   transform: rotate(360deg);
   transition: transform 0.7s ease-in-out;
+}
+@media screen and (min-width: 768px) {
+  .meal_menu {
+    margin: 40px;
+  }
 }
 
 .order_menu {

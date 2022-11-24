@@ -37,6 +37,11 @@
             }
         }
     }
+
+    @media screen and (min-width: $breakpoint-tablet) {
+        margin: 40px;
+        padding: 0px;
+    }
 }
 
 .restaurants {
@@ -111,9 +116,10 @@
     }
 
     @media screen and (min-width: $breakpoint-tablet) {
+        margin: 40px;
         div {    
             a {
-                width: 40%;
+                width: 48%;
             }
         }
     }
