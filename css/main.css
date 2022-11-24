@@ -1,21 +1,17 @@
 @-webkit-keyframes rotate-animation {
   0% {
-    transform: rotate(0deg);
-    scale: 0.5;
+    transform: rotate(0deg) scale(0.5);
   }
   100% {
-    transform: rotate(1040deg);
-    scale: 1;
+    transform: rotate(1040deg) scale(1);
   }
 }
 @keyframes rotate-animation {
   0% {
-    transform: rotate(0deg);
-    scale: 0.5;
+    transform: rotate(0deg) scale(0.5);
   }
   100% {
-    transform: rotate(1040deg);
-    scale: 1;
+    transform: rotate(1040deg) scale(1);
   }
 }
 @-webkit-keyframes hide-loader-container {
