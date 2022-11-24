@@ -20,6 +20,7 @@ body {
     align-items: center;
     position: fixed;
     background-color: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(1px);
     z-index: 1;
     animation: hide-loader-container 0s ease-in 1.5s;
     animation-fill-mode: forwards;
